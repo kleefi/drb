@@ -1,18 +1,19 @@
 "use client";
 import Cards from "@/components/Cards";
-import { getTempatWithKategori } from "@/utils/api/location";
+import { getAllTempat } from "@/utils/api/location";
+
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ClipLoader } from "react-spinners";
 
-export default function Home() {
+export default function PageHome() {
   const [tempatList, setTempatList] = useState([]);
   const [openIndex, setOpenIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const data = await getTempatWithKategori();
+      const data = await getAllTempat();
 
       // Group by kategori
       const grouped = data.reduce((acc, item) => {
