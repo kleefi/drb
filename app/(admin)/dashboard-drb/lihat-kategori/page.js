@@ -24,7 +24,6 @@ export default function PageLihatKategori() {
     try {
       const data = await getKategoriList();
       setKategoriList(data);
-      toast.success("Kategori berhasil diupdate!");
     } catch (err) {
       // console.error(err.message);
       toast.error("Kategori gagal diupdate!");
@@ -50,6 +49,7 @@ export default function PageLihatKategori() {
       setShowModal(false);
       setSelectedKategori(null);
       fetchKategori();
+      toast.success("Kategori berhasil diupdate!");
     } catch (err) {
       alert("Gagal update kategori.");
     }
