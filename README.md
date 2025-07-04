@@ -1,6 +1,6 @@
 # 🔗 Link untuk DRB
 
-Aplikasi sederhana untuk membuat dan membagikan tautan (link) untuk keperluan DRB (Digital Resource Bank), dibuat menggunakan:
+Aplikasi sederhana untuk membuat dan membagikan tautan (link) untuk keperluan tenant DRB (Dapur Rumah Bali), dibuat menggunakan:
 
 - [Next.js](https://nextjs.org/) (App Router)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -13,7 +13,6 @@ Aplikasi sederhana untuk membuat dan membagikan tautan (link) untuk keperluan DR
 - Autentikasi menggunakan Supabase
 - Input dan simpan link DRB ke database
 - Tampilkan daftar link DRB yang sudah disimpan
-- Link bisa dibagikan/dikunjungi langsung
 
 ---
 
